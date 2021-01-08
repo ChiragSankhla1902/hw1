@@ -1,16 +1,19 @@
 import os.path
 import csv
+import glob
 import pandas as pd
+
+
 #----------------------Saving path,name and data to file---------------
-# save_path = (r"C:\Users\Chirag\Documents\Python Scripts")
+# save_path = (r"C:\Users\Chirag\Documents\Python Scripts\ex")
 #
 # name_of_file = input("What is the name of the file: ")
 # completeName = os.path.join(save_path, name_of_file+".csv")
-
+#
 # fields = ['Name', 'Branch', 'Year', 'CGPA']
 # rows = [ ['Nikhil', 'COE', '2', '9.0'],
-#          ['Sanchit1', 'COE', '2', '9.1'],
-#          ['Aditya', 'IT', '2', '9.3'],
+#          ['Sanchit', 'COE', '2', '9.1'],
+#          ['Aditya1', 'IT', '2', '9.3'],
 #          ['Sagar', 'SE', '1', '9.5'],
 #          ['Prateek', 'MCE', '3', '7.8'],
 #          ['Sahil', 'EP', '2', '9.1']]
@@ -22,9 +25,23 @@ import pandas as pd
 #
 #
 #     csvwriter.writerows(rows)
+
+
+
 #--------------------------------selecting particular column-----------------------------------------
-# data=pd.read_csv(r"C:\Users\Chirag\Documents\Python Scripts\First1.csv", usecols = ['Name','CGPA'])
+# data=pd.read_csv(r"C:\Users\Chirag\Documents\Python Scripts\ex\First1.csv", usecols = ['Name','CGPA'])
 #---------------------------------------selecting displaying on particular condition--------------------
-# data=pd.read_csv(r"C:\Users\Chirag\Documents\Python Scripts\First1.csv")
+# data=pd.read_csv(r"C:\Users\Chirag\Documents\Python Scripts\ex\First1.csv")
 # data=data[data["CGPA"]<="9.0"]
-print(data)
+# print(data)
+
+
+#-----------------------------printing data of all the file present in a given folder--------------
+# def openfile(str):
+#     save_path = (r"C:\Users\Chirag\Documents\Python Scripts\ex")
+#     complete=os.path.join(save_path,str)
+#     data=pd.read_csv(complete)
+#     print(data)
+#
+# for files in os.listdir(r"C:\Users\Chirag\Documents\Python Scripts\ex"):
+#     openfile(files)
