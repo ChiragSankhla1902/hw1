@@ -1,0 +1,30 @@
+import os.path
+import csv
+import pandas as pd
+#----------------------Saving path,name and data to file---------------
+# save_path = (r"C:\Users\Chirag\Documents\Python Scripts")
+#
+# name_of_file = input("What is the name of the file: ")
+# completeName = os.path.join(save_path, name_of_file+".csv")
+
+# fields = ['Name', 'Branch', 'Year', 'CGPA']
+# rows = [ ['Nikhil', 'COE', '2', '9.0'],
+#          ['Sanchit1', 'COE', '2', '9.1'],
+#          ['Aditya', 'IT', '2', '9.3'],
+#          ['Sagar', 'SE', '1', '9.5'],
+#          ['Prateek', 'MCE', '3', '7.8'],
+#          ['Sahil', 'EP', '2', '9.1']]
+#
+# with open(completeName, 'a+') as csvfile:
+#     csvwriter = csv.writer(csvfile)
+#
+#     csvwriter.writerow(fields)
+#
+#
+#     csvwriter.writerows(rows)
+#--------------------------------selecting particular column-----------------------------------------
+# data=pd.read_csv(r"C:\Users\Chirag\Documents\Python Scripts\First1.csv", usecols = ['Name','CGPA'])
+#---------------------------------------selecting displaying on particular condition--------------------
+# data=pd.read_csv(r"C:\Users\Chirag\Documents\Python Scripts\First1.csv")
+# data=data[data["CGPA"]<="9.0"]
+print(data)
