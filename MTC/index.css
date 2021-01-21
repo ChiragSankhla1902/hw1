@@ -1,0 +1,60 @@
+
+body{
+	background: linear-gradient(to right, rgba(166, 91, 207,0.5),rgba(140, 101, 235,0.5));
+	height: 600px;
+    width: 100vw;
+    background-size: cover;
+
+}
+.cardcontainer {
+	display:none;
+}
+
+.btn2{
+	color: #F8F9F9;
+	background-color: #5DADE2;
+	border-radius: 10px;
+	font-size: 22px;
+	border:none;
+	padding:4px 10px;
+	margin-left: 20px;
+	margin-bottom:5vh;
+}
+
+.btn2:hover{
+	color:#F8F9F9;
+	background-color: #DE3163 ;
+}
+
+.btn1{
+	color: #F8F9F9;
+	background-color: #5DADE2;
+	border-radius: 10px;
+	font-size: 22px;
+	border:none;
+	padding:4px 10px;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.btn1:hover{
+	color:#F8F9F9;
+	background-color: #DE3163 ;
+}
+.jumbotron:hover{
+  	box-shadow: 5px 10px #888888;
+}
+
+@media(max-width:1280px){
+	.cardcontainer{
+		display:block;
+	}
+	.card:hover{
+		box-shadow: 5px 10px #888888;
+	}
+	.container{
+		display: none;
+	}
+
+
+}
